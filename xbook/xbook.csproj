@@ -7,8 +7,8 @@
     <ProjectGuid>{376E6F57-7188-40B3-ADF2-CFCFFC8B6903}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>exsheets</RootNamespace>
-    <AssemblyName>exsheets</AssemblyName>
+    <RootNamespace>xbook</RootNamespace>
+    <AssemblyName>xbook</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
