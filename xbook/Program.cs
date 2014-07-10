@@ -16,13 +16,25 @@ namespace ConsoleApplication3
 
 		public static void Main(string[] args)
 		{
-			string path = 1 <= args.Length ? args[0] : "";
-			if (path == "")
+			try
 			{
-				Console.WriteLine("path to Excel Workbook.");
-				return;
-			}
+				string path = 1 <= args.Length ? args[0] : "";
+				if (path == "")
+				{
+					Console.WriteLine("path to Excel Workbook.");
+					return;
+				}
 
+				Execute(path);
+			}
+			catch (Exception e)
+			{
+				MessageBox.Show(e.ToString(), "エラー", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+			}
+		}
+
+		private static void Execute(string path)
+		{
 			Microsoft.Office.Interop.Excel.Application app = null;
 			try
 			{
@@ -38,10 +50,6 @@ namespace ConsoleApplication3
 				}
 
 				Console.WriteLine("" + book.Worksheets.Count + "個のシートを検出しました。");
-			}
-			catch (Exception e)
-			{
-				MessageBox.Show(e.ToString(), "エラー", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
 			}
 			finally
 			{
