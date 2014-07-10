@@ -26,7 +26,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -36,24 +37,5 @@ Icon
 .Trashes
 
 xbook.v12.suo
-xbook/bin/Debug/xbook.exe
-xbook/bin/Debug/xbook.pdb
-xbook/bin/Debug/xbook.vshost.exe
-xbook/bin/Debug/xbook.vshost.exe.config
-xbook/bin/Debug/xbook.vshost.exe.manifest
-xbook/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
-xbook/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
-xbook/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
-xbook/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
-xbook/obj/Debug/xbook.csproj.FileListAbsolute.txt
-xbook/obj/Debug/xbook.csproj.ResolveComReference.cache
-xbook/obj/Debug/xbook.csprojResolveAssemblyReference.cache
-xbook/obj/Debug/xbook.exe
-xbook/obj/Debug/xbook.pdb
-xbook/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache
-xbook/obj/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
-xbook/obj/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
-xbook/obj/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
-xbook/obj/Release/xbook.csproj.ResolveComReference.cache
-xbook/obj/Release/xbook.exe
-xbook/obj/Release/xbook.csproj.FileListAbsolute.txt
+xbook/bin/Debug/*
+xbook/obj/*
