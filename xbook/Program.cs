@@ -36,14 +36,34 @@ namespace ConsoleApplication3
 		private static void Execute(string path)
 		{
 			Microsoft.Office.Interop.Excel.Application app = null;
+
+	
+			
 			try
 			{
 				app = new Microsoft.Office.Interop.Excel.Application();
+
 				app.Visible = false;
-				app.Workbooks.Open(path, Type.Missing, true, Type.Missing, Type.Missing, Type.Missing,
-					Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
-					false, Type.Missing, Type.Missing);
+	
+				app.Workbooks.Open(
+					path,
+					Type.Missing,
+					true,
+					Type.Missing,
+					Type.Missing,
+					Type.Missing,
+					Type.Missing,
+					Type.Missing,
+					Type.Missing,
+					Type.Missing,
+					Type.Missing,
+					Type.Missing,
+					false,
+					Type.Missing,
+					Type.Missing);
+
 				Microsoft.Office.Interop.Excel.Workbook book = app.Workbooks[1];
+
 				for (int i = 0; i < book.Worksheets.Count; i++)
 				{
 					Console.WriteLine(book.Worksheets[1 + i].Name);
