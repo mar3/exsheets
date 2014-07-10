@@ -29,7 +29,11 @@ namespace ConsoleApplication3
 			}
 			catch (Exception e)
 			{
-				MessageBox.Show(e.ToString(), "エラー", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+				MessageBox.Show(
+					e.ToString(),
+					"エラー",
+					System.Windows.Forms.MessageBoxButtons.OK,
+					System.Windows.Forms.MessageBoxIcon.Error);
 			}
 		}
 
